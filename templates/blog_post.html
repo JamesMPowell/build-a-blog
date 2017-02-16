@@ -3,13 +3,12 @@
 {% block content %}
 <form method="post"> 
             <hr> 
-            {% for blog in blogs %}
+            
             <div class = "blog">
-                <div class= "blog-title"><a href ="{{ blog.key().id() }}">{{blog.title}}</a></div>
+                <div class= "blog-title">{{blog.title}}</a></div>
                 <pre class= "blog-body">{{blog.blog}}</pre>
             </div>
             
-            {% endfor %}
             <hr>
 </form>
 

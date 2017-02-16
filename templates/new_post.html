@@ -1,9 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{title}}</h1>
-<div>
-    <p>{{blogContent}} </p>
-</div>
+
+    <form method="post">  
+        <label>
+            <div>title</div>
+            <input type="text" name="title" value= "{{title}}">
+        </label>
+
+        <label>
+            <div>Content</div>
+            <input type="text" name="blog" value="{{blog}}">
+        </label>
+
+         <div class = "error">{{error}}</div>
+
+        <input type="submit">
+   </form>
 
 {% endblock %}
