@@ -1,17 +1,9 @@
-{% extends "base.html" %}
-
-{% block content %}
-<form method="post"> 
+<div> 
             <hr> 
-            
             <div class = "blog">
-                <div class= "blog-title">{{blog.title}}</a></div>
-                <pre class= "blog-body">{{blog.blog}}</pre>
+                <div class= "blog-title"><h2>{{blog_post.title}}</h2></div>
+                <pre class= "blog-body"><b>{{blog_post.blog}}</b></pre>
+                <pre class= "blog-created">{{blog_post.created}}</pre>
             </div>
-            
             <hr>
-</form>
-
-{% endblock %}
-
-     
+</div>
